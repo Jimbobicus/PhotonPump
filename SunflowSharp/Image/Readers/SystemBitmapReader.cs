@@ -18,8 +18,7 @@ namespace SunflowSharp.Image.Readers
 		public override Bitmap load(string filename, bool isLinear) 
 		{
 			// regular image, load using Java api
-			System.Drawing.Bitmap bi = new
-				System.Drawing.Bitmap(filename);
+			var bi = new System.Drawing.Bitmap(filename);
 			int width = bi.Width;
 			int height = bi.Height;
 			System.Drawing.Color tmpColour;
